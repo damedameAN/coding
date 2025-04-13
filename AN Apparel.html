@@ -1,68 +1,106 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>A|N Apparel</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A|N Apparel</title>
+	<!-- My Style -->
+	<link rel="stylesheet" href="Style.css">
+	<!-- Feather Icons -->
+	<script src="https://unpkg.com/feather-icons"></script>
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+	<!-- Navbar -->
+	<nav class="navbar">
+		<a href="AN Apparel.html"><img src="Images/LOGO 1.png" alt="Logo A|N" class="logo-small"></a>
+		<div class="nav-links">
+			<a href="#">HOME</a>
+			<a href="#">KIDS</a>
+			<a href="#">WOMEN</a>
+			<a href="#">MAN</a>
+			<a href="#">ABOUT US</a>
+		</div>
+		<div class="navbar-center">
+			<input type="text" placeholder="Cari produk..." class="search-bar" />
+		</div>
+		<div class="navbar-extra">
+			<a href="#" id="search"> <i data-feather="search"></i></a>
+			<a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+			<a href="#" id="shopping-bag"> <i data-feather="shopping-bag"></i></a>
+			<a href="#" id="menu"> <i data-feather="menu"></i></a>
+			<!-- Language Selector -->
+			<div class="language-wrapper" style="position: relative; display: inline-block;">
+				<a href="#" id="language-selector"><i data-feather="globe"></i></a>
+				<div id="language-dropdown" style="display: none; position: absolute; top: 30px; background: white; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); z-index: 10;">
+					<a href="/id.html" style="display: block; padding: 8px 12px; text-decoration: none; color: black;">🇮🇩 Bahasa</a>
+					<a href="/en.html" style="display: block; padding: 8px 12px; text-decoration: none; color: black;">🇬🇧 English</a>
+				</div>
+			</div>
+		</div>
+	</nav>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="navbar-left">
-      <img src="images/logo.png" alt="Logo A|N" class="logo-small" />
-    </div>
-    <div class="navbar-center">
-      <input type="text" placeholder="Cari produk..." class="search-bar" />
-    </div>
-    <div class="navbar-right">
-      <select class="lang-selector">
-        <option value="id">Bahasa</option>
-        <option value="en">English</option>
-      </select>
-    </div>
-  </nav>
+	<!-- Hero Section -->
+	<section class="hero">
+		<h1>Discover Timeless Polo Shirts</h1>
+		<p>Modern. Minimal. Masculine.</p>
+	</section>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Discover Timeless Polo Shirts</h1>
-    <p>Modern. Minimal. Masculine.</p>
-  </section>
+	<!-- Katalog -->
+	<section class="catalog">
+		<h2>Our Polo Collection</h2>
+		<div class="products">
+			<div class="product-card">
+				<img src="https://images.unsplash.com/photo-1618354691373-f34863b4e7ed" alt="Polo 1" />
+				<h3>Classic Fit Polo</h3>
+				<p>IDR 249K</p>
+				<button class="add-cart">Add to Cart</button>
+			</div>
+			<div class="product-card">
+				<img src="https://images.unsplash.com/photo-1520975682361-c5f63602aa1c" alt="Polo 2" />
+				<h3>Modern Slim Polo</h3>
+				<p>IDR 279K</p>
+				<button class="add-cart">Add to Cart</button>
+			</div>
+			<div class="product-card">
+				<img src="https://images.unsplash.com/photo-1562158070-57147d1a9b40" alt="Polo 3" />
+				<h3>Urban Style Polo</h3>
+				<p>IDR 299K</p>
+				<button class="add-cart">Add to Cart</button>
+			</div>
+		</div>
+	</section>
 
-  <!-- Katalog -->
-  <section class="catalog">
-    <h2>Our Polo Collection</h2>
-    <div class="products">
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1618354691373-f34863b4e7ed" alt="Polo 1" />
-        <h3>Classic Fit Polo</h3>
-        <p>IDR 249K</p>
-        <button class="add-cart">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1520975682361-c5f63602aa1c" alt="Polo 2" />
-        <h3>Modern Slim Polo</h3>
-        <p>IDR 279K</p>
-        <button class="add-cart">Add to Cart</button>
-      </div>
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1562158070-57147d1a9b40" alt="Polo 3" />
-        <h3>Urban Style Polo</h3>
-        <p>IDR 299K</p>
-        <button class="add-cart">Add to Cart</button>
-      </div>
-    </div>
-  </section>
+	<!-- Chat Button -->
+	<a href="https://wa.me/6289527339815" class="chat-btn" target="_blank" title="Chat via WhatsApp">Chat Admin</a>
 
-  <!-- Chat Button -->
-  <a href="https://wa.me/6281234567890" class="chat-btn" target="_blank" title="Chat via WhatsApp">Chat Admin</a>
+	<!-- Footer -->
+	<footer class="footer">
+		<p>&copy; 2025 A|N Apparel. All rights reserved.</p>
+	</footer>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 A|N Apparel. All rights reserved.</p>
-  </footer>
+	<!-- Feather Icons & Language Toggle -->
+	<script>
+		feather.replace();
 
+		document.addEventListener("DOMContentLoaded", function() {
+			const selector = document.getElementById("language-selector");
+			const dropdown = document.getElementById("language-dropdown");
+
+			selector.addEventListener("click", function(e) {
+				e.preventDefault();
+				dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+			});
+
+			document.addEventListener("click", function(e) {
+				if (!selector.contains(e.target) && !dropdown.contains(e.target)) {
+					dropdown.style.display = "none";
+				}
+			});
+		});
+	</script>
 </body>
 </html>
