@@ -1,44 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>A|N Apparel</title>
-
-	<!-- My Style -->
-	<link rel="stylesheet" href="Style.css">
-	<!-- Feather Icons -->
-	<script src="https://unpkg.com/feather-icons"></script>
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A|N Apparel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
 </head>
 <body>
-	<!-- Navbar start -->
-	<section class="navbar"></section>
-	<nav>
-		<a href="AN Apparel.html"><img src="Images/LOGO 1.png"></a>
-		<div class="nav-links">
-			<a href="#">HOME</a>
-			<a href="#">KIDS</a>
-			<a href="#">WOMEN</a>
-			<a href="#">MAN</a>
-			<a href="#">ABOUT US</a>
-		</div>
-<div class="navbar-extra">
-	<a href="#" id="search"> <i data-feather="search"></i></a>
-	<a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
-	<a href="#" id="shopping-bag"> <i data-feather="shopping-bag"></i></a>
-	<a href="#" id="globe"> <i data-feather="globe"></i></a>
-	<a href="#" id="menu"> <i data-feather="menu"></i></a>
-</div>
-	
-	<!-- Navbar end -->
 
-	<!-- Feather-Icons -->
-	<script>
-		feather.replace();
-	</script>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="images/logo.png" alt="Logo A|N" class="logo-small" />
+    </div>
+    <div class="navbar-center">
+      <input type="text" placeholder="Cari produk..." class="search-bar" />
+    </div>
+    <div class="navbar-right">
+      <select class="lang-selector">
+        <option value="id">Bahasa</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Discover Timeless Polo Shirts</h1>
+    <p>Modern. Minimal. Masculine.</p>
+  </section>
+
+  <!-- Katalog -->
+  <section class="catalog">
+    <h2>Our Polo Collection</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1618354691373-f34863b4e7ed" alt="Polo 1" />
+        <h3>Classic Fit Polo</h3>
+        <p>IDR 249K</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1520975682361-c5f63602aa1c" alt="Polo 2" />
+        <h3>Modern Slim Polo</h3>
+        <p>IDR 279K</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1562158070-57147d1a9b40" alt="Polo 3" />
+        <h3>Urban Style Polo</h3>
+        <p>IDR 299K</p>
+        <button class="add-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chat Button -->
+  <a href="https://wa.me/6281234567890" class="chat-btn" target="_blank" title="Chat via WhatsApp">Chat Admin</a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 A|N Apparel. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
