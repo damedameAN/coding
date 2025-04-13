@@ -1,72 +1,19 @@
 <!DOCTYPE html>
-<html lang="en id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A|N Apparel</title>
-  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" href="Style.css">
   <script src="https://unpkg.com/feather-icons"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet"/>
-  <style>
-    #cart-count {
-      position: absolute;
-      top: -5px;
-      right: -10px;
-      background-color: red;
-      color: white;
-      font-size: 12px;
-      padding: 2px 6px;
-      border-radius: 50%;
-      display: none;
-    }
-
-    #cart-popup {
-      display: none;
-      position: absolute;
-      right: 0;
-      top: 30px;
-      width: 250px;
-      background-color: white;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      padding: 10px;
-      z-index: 100;
-    }
-
-    #cart-popup ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    #cart-popup li {
-      padding: 6px 0;
-      border-bottom: 1px solid #eee;
-    }
-
-    #cart-popup li:last-child {
-      border-bottom: none;
-    }
-
-    .remove-btn {
-      background: transparent;
-      border: none;
-      color: red;
-      cursor: pointer;
-      float: right;
-      font-size: 14px;
-    }
-
-    #shopping-cart-container {
-      position: relative;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
-    <a href="AN Apparel.html"><img src="Images/LOGO 1.png" alt="Logo A|N" class="logo-small" /></a>
+    <a href="AN Apparel.html"><img src="Images/LOGO 1.png" alt="Logo A|N" class="logo-small"></a>
     <div class="nav-links">
       <a href="#">HOME</a>
       <a href="#">KIDS</a>
@@ -79,23 +26,14 @@
     </div>
     <div class="navbar-extra">
       <a href="#" id="search"><i data-feather="search"></i></a>
-      <div id="shopping-cart-container">
-        <a href="#" id="shopping-cart" style="position: relative;">
-          <i data-feather="shopping-cart"></i>
-          <span id="cart-count">0</span>
-        </a>
-        <div id="cart-popup">
-          <strong>Keranjang Anda:</strong>
-          <ul id="cart-items-list"></ul>
-        </div>
-      </div>
+      <a href="#" id="shopping-cart" style="position: relative;"><i data-feather="shopping-cart"></i><span id="cart-count">0</span></a>
       <a href="#" id="shopping-bag"><i data-feather="shopping-bag"></i></a>
       <a href="#" id="menu"><i data-feather="menu"></i></a>
       <div class="language-wrapper" style="position: relative; display: inline-block;">
         <a href="#" id="language-selector"><i data-feather="globe"></i></a>
         <div id="language-dropdown" style="display: none; position: absolute; top: 30px; background: white; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); z-index: 10;">
-          <a href="/id.html" style="display: block; padding: 8px 12px; text-decoration: none; color: black;">🇮🇩 Bahasa</a>
-          <a href="/en.html" style="display: block; padding: 8px 12px; text-decoration: none; color: black;">🇬🇧 English</a>
+          <a href="/id.html" style="display: block; padding: 8px 12px; text-decoration: none; color: black;">🇮🇩 Indonesia</a>
+          <a href="/en.html" style="display: block; padding: 8px 12px; text-decoration: none; color: black;">EN English</a>
         </div>
       </div>
     </div>
@@ -104,7 +42,7 @@
   <!-- Hero Section -->
   <section class="hero">
     <h1>Discover Timeless Polo Shirts</h1>
-    <p>Modern. Minimal. Masculine.</p>
+    <p>Modern, Fasionable.</p>
   </section>
 
   <!-- Katalog -->
@@ -112,19 +50,19 @@
     <h2>Our Polo Collection</h2>
     <div class="products">
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1618354691373-f34863b4e7ed" alt="Polo 1" />
+        <img src="Images/Polo 1.png" alt="Polo 1" />
         <h3>Classic Fit Polo</h3>
         <p>IDR 249K</p>
         <button class="add-cart">Add to Cart</button>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1520975682361-c5f63602aa1c" alt="Polo 2" />
+        <img src="Images/Polo 2.png" alt="Polo 2" />
         <h3>Modern Slim Polo</h3>
         <p>IDR 279K</p>
         <button class="add-cart">Add to Cart</button>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1562158070-57147d1a9b40" alt="Polo 3" />
+        <img src="Images/Modern Polo.png" alt="Polo 3" />
         <h3>Urban Style Polo</h3>
         <p>IDR 299K</p>
         <button class="add-cart">Add to Cart</button>
@@ -140,7 +78,7 @@
     <p>&copy; 2025 A|N Apparel. All rights reserved.</p>
   </footer>
 
-  <!-- Scripts -->
+  <!-- Feather & Script -->
   <script>
     feather.replace();
 
@@ -159,77 +97,41 @@
         }
       });
 
-      let cart = JSON.parse(localStorage.getItem("cart")) || {};
+      // Cart
+      let cartCount = 0;
+      let cartItems = [];
       const cartCountSpan = document.getElementById("cart-count");
       const addToCartButtons = document.querySelectorAll(".add-cart");
-      const cartItemsList = document.getElementById("cart-items-list");
-      const cartPopup = document.getElementById("cart-popup");
-
-      function updateCartDisplay() {
-        let totalItems = 0;
-        cartItemsList.innerHTML = "";
-
-        for (const [name, qty] of Object.entries(cart)) {
-          totalItems += qty;
-
-          const li = document.createElement("li");
-          li.innerHTML = `${name} x${qty} <button class="remove-btn" data-name="${name}">❌</button>`;
-          cartItemsList.appendChild(li);
-        }
-
-        cartCountSpan.textContent = totalItems;
-        cartCountSpan.style.display = totalItems > 0 ? "inline-block" : "none";
-        localStorage.setItem("cart", JSON.stringify(cart));
-
-        // tombol hapus
-        const removeButtons = document.querySelectorAll(".remove-btn");
-        removeButtons.forEach(btn => {
-          btn.addEventListener("click", function () {
-            const productName = btn.getAttribute("data-name");
-
-            if (cart[productName]) {
-              cart[productName]--;
-              if (cart[productName] <= 0) {
-                delete cart[productName];
-              }
-              updateCartDisplay();
-            }
-          });
-        });
-      }
 
       addToCartButtons.forEach(button => {
         button.addEventListener("click", function () {
-          const productName = button.closest(".product-card").querySelector("h3").textContent;
-          if (cart[productName]) {
-            cart[productName]++;
-          } else {
-            cart[productName] = 1;
-          }
-          updateCartDisplay();
+          const productCard = button.closest(".product-card");
+          const productName = productCard.querySelector("h3").textContent;
+
+          cartItems.push(productName);
+          cartCount++;
+          cartCountSpan.textContent = cartCount;
+          cartCountSpan.style.display = "inline-block";
+
+          // Simpan ke localStorage
+          localStorage.setItem("cartItems", JSON.stringify(cartItems));
         });
       });
 
-      document.getElementById("shopping-cart").addEventListener("click", function (e) {
-        e.preventDefault();
-        cartPopup.style.display = cartPopup.style.display === "block" ? "none" : "block";
-      });
-
-      // Chat
+      // Chat button behavior
       const chatBtn = document.getElementById("chat-btn");
       chatBtn.addEventListener("click", function (e) {
         e.preventDefault();
-        const storedCart = JSON.parse(localStorage.getItem("cart")) || {};
-        const items = Object.entries(storedCart).map(([name, qty]) => `- ${name} x${qty}`).join("\n");
-        const message = items
-          ? `Halo Admin, saya ingin order:\n${items}`
+
+        const storedCart = JSON.parse(localStorage.getItem("cartItems")) || [];
+        const message = storedCart.length
+          ? `Halo Admin, saya ingin order:\n${storedCart.map((item, i) => `${i + 1}. ${item}`).join("\n")}`
           : `Halo Admin, saya ingin bertanya mengenai produk.`;
+
         const encodedMsg = encodeURIComponent(message);
         const waUrl = `https://wa.me/6289527339815?text=${encodedMsg}`;
         window.open(waUrl, "_blank");
       });
-
-      updateCartDisplay(); // tampilkan cart saat page load
     });
   </script>
 </body>
